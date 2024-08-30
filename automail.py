@@ -10,7 +10,7 @@ receiver = "karthikeyangan05@gmail.com"  # receiver email address
 body = f"Attendence-File-{date}"  # email body
 filename = "Attendance"+os.sep+"{}".format(formatted_date)
 
-yag = yagmail.SMTP("karthikeyan.g.2023.csbs@ritchennai.edu.in", "Karthik@1csbs")
+yag = yagmail.SMTP("", "")
 
 yag.send(to=receiver, subject="Attendance Report", contents=body, attachments=filename)
 
